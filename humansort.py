@@ -1,4 +1,6 @@
 def human_sort(L):
+    # this functions tries to parse out the number in string s
+    # starting from index i
     def get_num(s, i):
         num = s[i]
         length = len(s)
@@ -8,7 +10,8 @@ def human_sort(L):
             else:
                 break
         return (int(num))
-
+    
+    # string compare function
     def compare(A, B):
         length_A = len(A)
         length_B = len(B)
@@ -61,11 +64,11 @@ def human_sort(L):
 
 
 def test():
+    # some arrays for testing
     L1 = ["file1","file10","file2"]
     L2 = ["file3aaaaaaaa","aa","file3","file30"]
     L3 = ["213","15","121aa","howd1","howd15","howd2"]
     L4 = ["file1","file3","file10","file2","file20","file11_v1","file11_v10",
     "file11_v2"]
-    print(human_sort(L4))
     return
 
